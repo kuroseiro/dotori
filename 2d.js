@@ -90,7 +90,7 @@ function movimiento() {
 function start() {
   cambio = document.getElementById('pantalla-2d');
   //<script src="2d.js" type="text/javascript"></script>
-  inclusion = "<script src="3d.js" type="text/javascript"></script>"
+  //inclusion = "<script src="3d.js" type="text/javascript"></script>";
 }
 function mousePressed() {
   loop();
