@@ -6,15 +6,16 @@ var geo = new THREE.BoxGeometry(1,1,1);
 var cubo = new THREE.Mesh(geo, material);
 ren.setSize(innerWidth, innerHeight);
 document.getElementById('juego').appendChild(ren.domElement);
-ren.domElement.id = 'pantalla-3d';
+ren.domElement.id = 'pantalla-3D';
 camara.position.set(0,0,5);
 escena.add(cubo);
   var move;
-
+document.getElementById('pantalla-3D').style.visibility = 'collapse';
+document.getElementById('pantalla-3D').style.float = 'left';
 function anime() {
   cubo.rotation.x += 0.01;
   cubo.rotation.y += 0.02;
-  move = requestAnimationFrame(animate);
+  move = requestAnimationFrame(anime);
   ren.render(escena, camara);
 }
 

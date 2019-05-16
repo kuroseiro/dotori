@@ -1,12 +1,13 @@
-
 function setup() {
  var pro = createCanvas(windowWidth, windowHeight);
  pro.parent('juego');
  pro.id("pantalla-2d");
+ pro.position(0,0);
+ start();
+ cambio.style.float = 'left';
  rectMode(CENTER);
  ellipseMode(CENTER);
  fondo = color(0, 50);
- start();
 }
 var cambio;
 var inclusion;
@@ -39,7 +40,9 @@ function draw() {
     case 3:
     //pelea
     run = true;
-    cambio.style.visibility = 'hidden';
+    cambio.style.visibility = 'collapse';
+    cambio.style.float = 'left';
+    document.getElementById('pantalla-3D').style.visibility = 'visible';
     //document.getElementById('juego').innerHTML =
     anime();
     noLoop();
