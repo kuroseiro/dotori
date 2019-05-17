@@ -20,7 +20,7 @@ function menu_2() {
 alert(12);
 }
 function menu_3() {
-alert(13);
+alert("no hay opciones");
 }
 function menu_4() {
 alert(14);
