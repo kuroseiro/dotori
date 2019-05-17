@@ -43,7 +43,6 @@ function draw() {
     cambio.style.visibility = 'collapse';
     cambio.style.float = 'left';
     document.getElementById('pantalla-3D').style.visibility = 'visible';
-    //document.getElementById('juego').innerHTML =
     anime();
     noLoop();
     etapa = 1;
@@ -78,7 +77,6 @@ function movimiento() {
          posY -= 5;
      }else {
        posY = 20;
-       //alert(":´(");
      }
    }
 
@@ -92,8 +90,6 @@ function movimiento() {
 }
 function start() {
   cambio = document.getElementById('pantalla-2d');
-  //<script src="2d.js" type="text/javascript"></script>
-  //inclusion = "<script src="3d.js" type="text/javascript"></script>";
 }
 function mousePressed() {
   loop();
