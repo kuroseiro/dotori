@@ -4,11 +4,13 @@ function setup() {
  pro.id("pantalla-2d");
  pro.position(0,0);
  start();
+ alert(12345);
  cambio.style.float = 'left';
  rectMode(CENTER);
  ellipseMode(CENTER);
  fondo = color(0, 50);
 }
+
 var cambio;
 var inclusion;
 var posY = 580,
@@ -16,6 +18,7 @@ var posY = 580,
     etapa = 1,
     fondo = 1,
     cont = 0;
+    
 function draw() {
   background(fondo);
   fill(95, 237, 170);
