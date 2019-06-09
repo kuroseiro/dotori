@@ -1,7 +1,7 @@
 var ren = new THREE.WebGLRenderer();
 var camara = new THREE.PerspectiveCamera(45, window.innerWidth/window.innerHeight,0.1, 100);
 var escena = new THREE.Scene();
-var material = new THREE.MeshBasicMaterial({color:0x5ad912});
+var material = new THREE.MeshBasicMaterial({color:0x09a6bb});
 var geo = new THREE.BoxGeometry(1,1,1);
 var cubo = new THREE.Mesh(geo, material);
 ren.setSize(innerWidth, innerHeight);
